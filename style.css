@@ -11,23 +11,23 @@
 /* mes polices pour info */
 
 h1,
-h2 {
+h2, h3{
     font-family: "Knewave", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
+
+ 
 p {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 }
 
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
-    font-weight: weight;
     font-style: normal;
 
 }
@@ -124,6 +124,7 @@ deux dimensions diponibles 1000 et 800 */
     justify-content: space-around;
 }
 
+/* alignement horizontal */
 .justify-center {
     justify-content: center;
 }
@@ -136,12 +137,14 @@ deux dimensions diponibles 1000 et 800 */
     justify-content: flex-start;
 }
 
+/* alignement vertical */
+
 .align-center {
     align-items: center;
 }
 
 .align-end {
-    align-items: flex-end;
+    align-content: flex-end;
 }
 
 .align-around {
@@ -156,9 +159,6 @@ deux dimensions diponibles 1000 et 800 */
     vertical-align: center;
 }
 
-.text-justify {
-    text-justify: inter-character;
-}
 
 
 .item-center {
@@ -281,6 +281,9 @@ deux dimensions diponibles 1000 et 800 */
     width: 100%;
 }
 
+.w-150 {
+    width: 150%;
+}
 
 /*-------------------------------------------------------------------------------------------*/
 /* mes tailles de tipos au cas où*/
@@ -308,6 +311,11 @@ deux dimensions diponibles 1000 et 800 */
     padding: 20px;
 }
 
+.padding-25 {
+
+    padding: 25px;
+}
+
 .padding-50 {
 
     padding: 50px;
@@ -321,6 +329,15 @@ deux dimensions diponibles 1000 et 800 */
 .margin-top-10 {
     margin-top: 10px;
 }
+
+.margin-top-15 {
+    margin-top: 15px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
 
 .margin-top-100 {
     margin-top: 100px;
@@ -409,6 +426,10 @@ deux dimensions diponibles 1000 et 800 */
     gap: 20px;
 }
 
+.gap-40 {
+    gap: 40px;
+}
+
 /*-------------------------------------------------------------------------------------------*/
 
 /* mes classe bouton*/
@@ -436,7 +457,7 @@ deux dimensions diponibles 1000 et 800 */
 
     color: white;
     background-color: #9C30F0;
-    padding: 20px;
+    padding: 10px;
     border-radius: 30px;
     text-align: center;
 
@@ -446,7 +467,7 @@ deux dimensions diponibles 1000 et 800 */
 
 
     background-color: #9C30F0;
-    padding: 5px;
+    padding: 10px;
     border-radius: 30px;
 
 
@@ -455,45 +476,151 @@ deux dimensions diponibles 1000 et 800 */
 
 
 
-
+/*LA LANDING PAGE*/
+/*-------------------------------------------------------------------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 /* page index*/
 /* header*/
 
 header {
-    position: fixed;
+    /* position: fixed; */
     top: 0;
     left: 0;
     width: 100%;
-    background-color: white;
-    height: 15vH;
+    background-color: #260356;
+
 }
 
 /*-------------------------------------------------------------------------------------------*/
-/* section 1 :  hero*/
+/* section 1 :  bannière du site - adem */
 
 .section-hero {
-    background-image: url(asset/);
+    background-color: #260356;
+    color: white;
+}
+
+.section-bg {
+    background-image: url(assets/bg.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     height: 100vH;
-    margin-top: 80px;
     color: white;
+    position: relative;
+    z-index: -5;
 
 }
 
+  
+
 h1 {
-    font-size: 72px;
+    font-size: 70px;
     font-weight: 300;
 }
 
+h2 {
+
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFE665;
+    text-align: center;
+
+}
+
+/* paragraphe du header */
+.pHeader{
+font-weight: 300;
+}
+
+.position {
+
+    position: relative;
+    bottom: 0px;
+    left: 0px;
+
+}
+
+
+.position2 {
+
+    position: absolute;
+    bottom: 110px;
+    left: 40px;
+
+}
+
+.position3 {
+
+    position: absolute;
+    bottom: 35px ; 
+    left: 680px;
+     }
+
+.position4 {
+
+    position: absolute;
+    bottom: 35px ; 
+    left: 480px;
+     }
+
+
+
+
+
 /*-------------------------------------------------------------------------------------------*/
-/* Section 2 : présentation*/
+/* Section 2 : présentation - vincent */
+
+/* background de ma section présentation*/
+.bgViolet {
+    background-color: #260356;
+}
+
+/* texte blanc*/
+.txtYellow {
+    color: #FFE665;
+}
+
+/* style de mes cartes   */
+.card {
+
+    background-color: #9C30F0;;
+    padding: 20px;
+    border-radius: 10px;
+    /* l'ombre de mes card */
+    box-shadow: 0px 6.475523948669434px 6px 0px rgba(41, 41, 41, 8%);
+    
+   
+}
+
+/* texte blanc*/
+.txtBlanc {
+    color: white;
+}
+
+.tranform1 {
+    transform: translate(-100px , -50px);
+}
+
+
+.tranform2 {
+    transform: translate(80px , 50px);
+}
+
+.column {
+    flex-direction: column;
+}
+
+
+
+
 
 
 /*-------------------------------------------------------------------------------------------*/
 /* Section 3 : fonctionnement*/
+
+.section3 {
+    background-color: #FF6376;
+}
 
 
 
@@ -514,3 +641,17 @@ h1 {
 }
 
 /*-------------------------------------------------------------------------------------------*/
+
+
+/*LA DOCUMENTATION */
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/*-------------------------------------------------------------------------------------------*/
+/* section 1 :  */
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* section 2 :  */
+
+/*-------------------------------------------------------------------------------------------*/
+/* section 2 :  */
