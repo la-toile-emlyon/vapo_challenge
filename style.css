@@ -912,6 +912,21 @@ m-section3-1 {
     border-radius: 20px;
       border: 1px solid #6F468D;
 }
+
+.glass {
+  background: rgba(255, 255, 255, 0.15); /* transparence */
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px); /* Safari */
+
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+  padding: 24px;
+
+  color: white;
+}
+
 .masterCard {
 
     background-color: #9d30f02a;
