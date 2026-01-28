@@ -814,7 +814,15 @@ p {
 /*-------------------------------------------------------------------------------------------*/
 /* Section 3 : fonctionnement*/
 
-.transform-section3-1 {
+.ma-video {
+  width: 50%;
+  max-width: 900px;
+  display: block;
+  margin: 0 auto;
+  border-radius: 12px;
+}
+
+m-section3-1 {
     transform: translate(200px, 180px);
 
 
