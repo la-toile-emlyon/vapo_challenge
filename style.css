@@ -11,14 +11,16 @@
 /* mes polices pour info */
 
 h1,
-h2, h3, h4{
+h2,
+h3,
+h4 {
     font-family: "Knewave", system-ui;
     font-weight: 400;
     font-style: normal;
 }
 
 
- 
+
 p {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -328,6 +330,7 @@ deux dimensions diponibles 1000 et 800 */
 
     padding: 5px;
 }
+
 .padding-10 {
 
     padding: 10px;
@@ -545,7 +548,7 @@ header {
 
 }
 
-  
+
 
 h1 {
     font-size: 40px;
@@ -554,10 +557,10 @@ h1 {
 
 h2 {
 
-    font-size: 60px;
+    font-size: 40px;
     font-weight: 300;
     color: white;
-    
+
 
 }
 
@@ -567,7 +570,7 @@ h4 {
     font-weight: 300;
     color: #FFE665;
     text-align: center;
-    
+
 
 }
 
@@ -577,13 +580,13 @@ h3 {
     font-size: 30px;
     font-weight: 300;
     color: #FFE665;
-    
+
 
 }
 
 /* paragraphe du header */
-.pHeader{
-font-weight: 300;
+.pHeader {
+    font-weight: 300;
 }
 
 .position {
@@ -606,16 +609,16 @@ font-weight: 300;
 .position3 {
 
     position: absolute;
-    bottom: 35px ; 
+    bottom: 35px;
     left: 680px;
-     }
+}
 
 .position4 {
 
     position: absolute;
-    bottom: 35px ; 
+    bottom: 35px;
     left: 480px;
-     }
+}
 
 
 
@@ -635,13 +638,13 @@ font-weight: 300;
     background-size: cover;
     background-position: center;
     height: 80vh;
-    
-    
+
+
 
 }
 
 
-p{
+p {
     color: white;
 }
 
@@ -653,30 +656,32 @@ p{
 /* style de mes cartes   */
 .card {
 
-    background-color: #9C30F0;;
+    background-color: #9C30F0;
+    ;
     padding: 20px;
     border-radius: 10px;
     /* l'ombre de mes card */
     box-shadow: 0px 6.475523948669434px 6px 0px rgba(41, 41, 41, 8%);
-    
-   
+
+
 }
 
 .bgviolet {
 
-    background-color: #9C30F0;;
+    background-color: #9C30F0;
+    ;
 }
 
-.flex-vrap{
+.flex-vrap {
 
     flex-wrap: nowrap;
 }
 
-.gaphi{
+.gaphi {
     gap: 10px 20px;
 }
 
-.ml{
+.ml {
     margin-left: 0;
 }
 
@@ -692,23 +697,23 @@ p{
 }
 
 .transform1 {
-    transform: translate(-120px,-120px);
+    transform: translate(-120px, -120px);
 }
 
 .transform1bis {
-    transform: translate(5px,-60px);
+    transform: translate(5px, -60px);
 }
 
 .transform2bis {
-    transform: translate(12px,-10px);
+    transform: translate(12px, -10px);
 }
 
 .transform3 {
-    transform: translate(-20px,-120px);
+    transform: translate(-20px, -120px);
 }
 
 .transform3bis {
-    transform: translate(-5px,-60px);
+    transform: translate(-5px, -60px);
     position: relative;
     z-index: 2;
     left: 12px;
@@ -716,12 +721,12 @@ p{
 }
 
 .backspecial3 {
-    
+
     background-color: #9d30f02a;
-    border: solid, #9C30F0 ;
+    border: solid, #9C30F0;
     border-radius: 20px;
     height: 400px;
-    
+
 
 }
 
@@ -734,32 +739,56 @@ p{
 /* Section 3 : fonctionnement*/
 
 .transform-section3-1 {
-    transform: translate(300px,180px);
-   
+    transform: translate(200px, 180px);
+
 
 }
 
 .transform1-section3-1bis {
-    transform: translate(500px,0px);
-    
+    transform: translate(350px, 0px);
+
 
 }
 
+.transform-section4-1 {
+    transform: translate(-150px, 180px);
 
+
+
+}
+
+.transform1-section4-1bis {
+    transform: translate(150px, -10px);
+
+
+}
+
+.transform-section5-1 {
+    transform: translate(-150px, 180px);
+
+
+
+}
 
 
 /*-------------------------------------------------------------------------------------------*/
 /* Section 4 : avis utilisateur */
 
-.transform-section4-1 {
-    transform: translate(-150px,180px);
-
-   
-
+/* paragraphes de la section 4 */
+.paragrapheSection4{
+    font-weight:200;
+    font-size: 16px;
+    line-height: 2;
 }
 
-.transform1-section4-1bis {
-    transform: translate(150px,-10px);
+
+
+
+.masterCard {
+
+    background-color: #9d30f02a;
+    border: solid, #9C30F0;
+    border-radius: 20px;
     
 
 }
@@ -769,15 +798,15 @@ p{
 /*-------------------------------------------------------------------------------------------*/
 /* header*/
 
-.imageheader{
- width: 140%;
+.imageheader {
+    width: 140%;
 }
 
 .btn-primary {
 
     color: white;
     background-color: #260356;
- 
+
     border-radius: 15px;
 
 }
@@ -786,53 +815,55 @@ p{
 
     color: white;
     background-color: #623F92;
- 
+
     border-radius: 15px;
 
 }
 
-.btn4{
+.btn4 {
     background-color: #9C30F0;
- 
+
     border-radius: 15px;
     color: white;
- 
+
 }
 
-.capsule2{
-background: #9C30F0;    
+.capsule2 {
+    background: #9C30F0;
 }
 
 /*marquee*/
 /* Conteneur visible */
 .flex-m {
-  display: flex;
-  width: max-content;
-  overflow: hidden;
-  flex-wrap:nowrap;
-  animation: marquee 20s linear infinite;
-  gap: 16px;
+    display: flex;
+    width: max-content;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    animation: marquee 20s linear infinite;
+    gap: 16px;
 }
 
 
 
 /* Chaque bloc */
 .avantage {
-  
-  padding: 2rem 2rem;
-  width: 250px;
-  background-color: lightgrey;
+
+    padding: 2rem 2rem;
+    width: 250px;
+    background-color: lightgrey;
 }
 
 /* Animation */
 @keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-50%);
+    }
 }
+
 /*-------------------------------------------------------------------------------------------*/
 /* footer*/
 
@@ -848,21 +879,19 @@ background: #9C30F0;
     font-weight: 300;
 }
 
-.colorWhite{
-    color:white;
+.colorWhite {
+    color: white;
 }
 
-.bgFooter{
-  background: linear-gradient(
-    to bottom,
-    #56108D 0%,
-    #56108D 34%,
-    #260356 100%
-  );
+.bgFooter {
+    background: linear-gradient(to bottom,
+            #56108D 0%,
+            #56108D 34%,
+            #260356 100%);
 }
 
-.policeEpilogue{
-  font-family: "Epilogue", sans-serif;
+.policeEpilogue {
+    font-family: "Epilogue", sans-serif;
 }
 
 /* padding pour aérer mes input dans mon formulaire de contact */
@@ -874,21 +903,7 @@ background: #9C30F0;
 
 
 
-/*Ma classe card faite par mous*/
-.card {
-  background-color: #8A25D8;
-  border-radius: 20px;
-  padding: 20px;
-  max-width: 320px;
-  margin: 16px;
-}
 
-
-/*taille du cràne a yanis class faite par mous*/
-.img-taille{
-    width: 55px;
-    border-radius: 60%;
-}
 
 
 /* bouton "Envoyer" footer */
@@ -899,20 +914,50 @@ background: #9C30F0;
     border: none;
     font-family: "Epilogue", sans-serif;
     font-weight: 600;
-     transition: transform .3s;
+    transition: transform .3s;
 }
 
 /* mes icones phosphore icon (instagram + linkedin)*/
-.ph-fill{
+.ph-fill {
     font-size: 25px;
+    color: white;
 }
-/*-------------------------------------------------------------------------------------------*/
 
+
+
+
+
+
+
+
+
+
+/*-------------------------------------------------------------------------------------------*/
 
 /*LA DOCUMENTATION */
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
-/*-------------------------------------------------------------------------------------------*/
+/*Ma classe card faite par mous*/
+.card {
+    background-color: #8A25D8;
+    border-radius: 20px;
+    padding: 20px;
+    max-width: 320px;
+    margin: 16px;
+}
+
+
+/*taille du cràne a yanis class faite par mous*/
+.img-taille {
+    width: 55px;
+    border-radius: 60%;
+}
+
+
+/*une classe pour la taille de l'image du user flow*/
+.W-500{
+    width: 500px;
+}
+
+
 /* section 1 :  */
 
 
