@@ -818,8 +818,7 @@ p {
   width: 50%;
   max-width: 900px;
   display: block;
-  margin: 0 auto;
-  border-radius: 12px;
+  margin: 0 auto; 
 }
 
 m-section3-1 {
