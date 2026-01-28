@@ -117,18 +117,18 @@
 
         <section class="flex align-center"> <!-- sommaire et contexte -->
             <div class="flex space-between">
-                <div class="w-20 txtBlanc"><!-- div sommaire -->
+                <div class="w-20 txtBlanc sommaire"><!-- div sommaire -->
                     <div class="card">
                         <h3>sommaire</h3>
-                        <p>contexte</p>
-                        <p>persona</p>
-                        <p>problématique</p>
-                        <p>concept</p>
-                        <p>user flow</p>
-                        <p>low-fi</p>
-                        <p>prototype</p>
-                        <p>Test utilisateur</p>
-                        <p>Perspective d’évolution</p>
+                        <a>contexte</a>
+                        <a id="PERSONNA">persona</a>
+                        <a>problématique</a>
+                        <a href="#SOMMAIRE">concept</a>
+                        <a>user flow</a>
+                        <a>low-fi</a>
+                        <a>prototype</a>
+                        <a>Test utilisateur</a>
+                        <a>Perspective d’évolution</a>
                     </div>
 
 
@@ -207,7 +207,7 @@
         </section>
 
 
-        <section class="bgviolet">
+        <section class="bgviolet" id="SOMMAIRE">
             <!-- div 4 : Moustapha concept -->
             <h3 class="flex justify-center margin-top-10 padding-20">Concept</h3>
             <div class="flex justify-center">
@@ -225,7 +225,7 @@
             <!-- div 5 : Moustapha user flow -->
             <h3 class="flex justify-center margin-top-10 padding-20">User flow</h3>
             <div>
-                <div>
+                <div class="flex justify-center">
                     <img src="assets/userflow.png" class="W-500" alt="">
                 </div>
             </div>
@@ -233,34 +233,61 @@
             <!-- div 6 : low-fi Moustapha -->
             <h3 class="flex justify-center margin-top-10 padding-20">Low-fi</h3>
             <div>
-                <div>
-                    <img src="assets/lowfi2 1.png" alt="">
-                    <img src="assets/lowfi4 1.png" alt="">
-                    <img src="assets/lowfi5 1.png" alt="">
+                <div class="flex space-between space-around">
+                    <div class="card-2 w-28 ">
+                        <img src="assets/lowfi2 1.png" class="card-img gap-20" alt="">
+
+                        <p>Page d’accomplisment des défis</p>
+
+                    </div>
+
+                    <div class="card-2 w-28 ">
+                        <img src="assets/lowfi4 1.png" class="card-img gap-20" alt="">
+
+                        <p>Page de la boutique et des récompenses</p>
+                    </div>
+                    <div class="card-2 w-28 ">
+                        <img src="assets/lowfi5 1.png" class="card-img gap-20" alt="">
+
+                        <p>Page d’accueil et d’activité </p>
+                    </div>
                 </div>
             </div>
 
             <!-- div 7 :Mid-fi Moustapha  -->
             <h3 class="flex justify-center margin-top-10 padding-20">Mid-fi</h3>
-            <div>
-                <div>
-                    <img src="" alt="">
+            <div class="flex space-around gaphi">
+                <div class="w-40">
+                    <img src="assets/image 14.png" alt="">
                 </div>
+                <div class="w-40">
+                    <img src="assets/image 15.png" alt="">
+                </div>
+                <div class="w-40">
+                    <img src="assets/image 25 1.png" alt="">
+                </div>
+                <div class="w-40">
+                    <img src="assets/image 25.png" alt="">
+                </div>
+
             </div>
 
             <!-- div 8 : Prototype Moustapha -->
             <h3 class="flex justify-center margin-top-10 padding-20">Prototype</h3>
             <div>
                 <div class="flex justify-center">
-                   <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/proto/hzxPncoWfZRwb5H9hkmwWV/groupe-3-adem-hissein-vincent-moustapha-?node-id=5977-1551&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5977%3A1551&show-proto-sidebar=0&embed-host=share&hide-ui=1" allowfullscreen></iframe>
+                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                        src="https://embed.figma.com/proto/hzxPncoWfZRwb5H9hkmwWV/groupe-3-adem-hissein-vincent-moustapha-?node-id=5977-1551&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5977%3A1551&show-proto-sidebar=0&embed-host=share&hide-ui=1"
+                        allowfullscreen></iframe>
                 </div>
             </div>
             <!-- div 9 : Test utilisateur Moustapha -->
             <h3 class="flex justify-center margin-top-10 padding-20">Test utilisateur</h3>
             <div>
                 <div class="flex space-between justify-center">
-                    <div class="w-40">
-                        <p >Utilisateur-1: aimerait plus d'animations de certaines transitions (comme lors des gains des
+                    <div class="w-40 gap-20 padding-10">
+                        <p class="">Utilisateur-1: aimerait plus d'animations de certaines transitions (comme lors des
+                            gains des
                             exp
                             écran 10) lors des achats, il faut qu'il y a cohérence entre la dépense des exp et les exp
                             restant
@@ -274,35 +301,36 @@
                             disparaîssent
                         </p>
                     </div>
-                    <div class="flex-vrap w-40 gaphi"><!-- 2 p -->
-                        <p>Utilisateur-2: aime beaucoup l'interface (trouve ça "cute").  aimerait plus de loisir créatif
-                            (comme
-                            création de bijoux)
+                    <div class="flex-vrap w-40 gaphi margin-bottom-50 margin-top-25"> <!-- 2 p -->
+                        <p class="gap-20" >Utilisateur-2: aime beaucoup l'interface (trouve ça "cute").  aimerait plus
+                        de loisir créatif
+                        (comme
+                        création de bijoux)
                         </p>
 
-                        <p class="padding-20">Utilisateur-3: trouve qu'il y a trop d'étapes.
+                        <p class="padding-20 gap-20 margin-bottom-50">Utilisateur-3: trouve qu'il y a trop d'étapes.
                             trouve que les challenges sont trop courts.
-                             pas assez de variété des challenge.
+                            pas assez de variété des challenge.
                         </p>
                     </div>
                 </div>
-                <div class="flex space-between justify-center gap-70 "><!-- div image -->
-                    <div class="">
+                <div class="flex space-between justify-center it gap-70 "><!-- div image -->
+                    <div class="car w-4">
                         <p>Avant</p>
-                        <img src="" alt="">
+                        <img src="assets/high fi avant.png" alt="">
                     </div>
                     <div class="">
 
                         <p>Aprés</p>
 
-                        <img src="" alt="">
+                        <img src="assets/high fi apres.png" alt="">
 
                     </div>
                 </div>
             </div>
 
             <!--Section 10 : Moustapah Perspective d’évolution-->
-            <h3 class="flex justify-center">Perspective d’évolution</h3>
+            <h3 class="flex justify-center margin-top-10 margin-b">Perspective d’évolution</h3>
 
             <div class="padding-10">
 
@@ -320,7 +348,7 @@
                         -Ajoutez d’autres activités par exemples les basket dans l’activité sportive etc.
                     </p>
                 </div>
-                <div>
+                <div class="margin-b">
                     <p>-Ajoutez plus de personnage achetable</p>
                 </div>
             </div>
@@ -332,7 +360,7 @@
 
     <!-- ouuuuh la belle manicure ! -->
 
-    <footer class="bgFooter colorWhite flex padding-40  " id="contact">
+    <footer class="bgFooter colorWhite flex padding-40 " id="contact">
         <div class="bas flex justify-center container">
             <div class="flex space-between">
                 <!-- ma première div -->

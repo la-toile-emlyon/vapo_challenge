@@ -45,7 +45,9 @@
     <link rel="stylesheet" href="style.css">
     <!-- fin vers notre css -->
 
-
+    <!-- aos -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+ <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 
 <body>
@@ -54,36 +56,41 @@
     <!-- ouuuuh notre jolie tete blonde ! -->
 
     <!-- mon parent ! -->
-    <header class="flex space-between align-center padding-20">
+    <header class="flex space-around align-center gap-20">
 
         <!-- mon premier enfant -->
-        <a href="index.html" class="w-15">
+        <a href="index.html" class="w-33 ">
             <img src="assets/logo_vapochallenge.png"
-                alt="notre super logo qui dechire jusqu'en enfer, highway to hell my bro!" class="w-50">
+                alt="notre super logo qui dechire jusqu'en enfer, highway to hell my bro!" class="w-33">
         </a>
 
 
         <!-- mon deuxieme enfant qui est aussi un parent -->
-        <div class="flex w-33 space-between">
+        <div class="flex w-40 space-between  padding-30">
 
-            <nav class="w-60">
+            <nav class="w-65 ">
 
-                <ul class="flex align-center space-between  ">
+                <ul class="flex space-between align-center capsule ">
 
-                    <li class=""><a href="index.html" class="btn-primary"> <i class="ph ph-house"></i> Accueil</a></li>
+                    <li class=""><a href="index.html" class="btn-primary padding-5"> <i class="ph ph-house"></i>Accueil</a></li>
 
-                    <li class=""><a href="documentation.html" class="btn-secondary"> <i class="ph ph-files"></i>
+                    <li class=""><a href="documentation.html" class="btn-secondary padding-5"> <i class="ph ph-files"></i>
                             Documentation</a></li>
 
                 </ul>
 
             </nav>
 
-            <a href="" class="w-25 colorWhite btn4">
+            <a href="" class="w-25 btn-tri space-around padding-30">
                 Télécharger
             </a>
 
         </div>
+
+
+
+
+
     </header>
 
 
@@ -126,9 +133,9 @@
 
         <!-- Section 2 : theme VINCENT -->
 
-        <section class="margin-bottom-100">
+        <section class="margin-bottom-50">
 
-            <div class="section-bg-theme">
+            <div class="section-bg-theme1">
 
             </div>
 
@@ -178,13 +185,13 @@
 
         <!-- Section 3 : fonctionnement / vincent-->
 
-        <section class="margin-bottom-100 masterCard container padding-10 ">
+        <section class="margin-bottom-50 masterCard container padding-10 ">
 
 
 
-            <div class="flex space-around margin-bottom-250 margin-top-25 justify-end">
+            <div class="flex space-around margin-bottom-200 margin-top-25 justify-end" data-aos="fade-right" data-aos-duration="3000">
 
-                <div class="w-33 transform-section3-1">
+                <div class="w-33 transform-section3-1" >
 
                     <h2 class="">CHOISIS TON ACTIVITÉ </h2>
                     <p class="">
@@ -199,7 +206,7 @@
             </div>
 
 
-            <div class="flex space-around margin-bottom-250 justify-flexstart">
+            <div class="flex space-around margin-bottom-200 justify-flexstart" data-aos="fade-left" data-aos-duration="3000">
 
                 <img src="assets/activite2.png" class="w-50 " alt="">
 
@@ -208,8 +215,7 @@
 
                     <h2> RELÈVE DES DÉFIS </h2>
                     <p class="">
-                        L’app mémorise tes choix pour te proposer des activités toujours plus proche de tes centres
-                        d’intêret
+                        Challenges-toi, montes en puissance et débloques les niveaux les plus hardcor!
                     </p>
 
                 </div>
@@ -219,14 +225,13 @@
             </div>
 
 
-            <div class="flex space-around margin-bottom-250 justify-end">
+            <div class="flex space-around margin-bottom-200 justify-end" data-aos="fade-right" data-aos-duration="3000">
 
                 <div class="w-33 transform-section3-1">
 
                     <h2 class="">GAGNE DES POINTS </h2>
                     <p class="">
-                        L’app mémorise tes choix pour te proposer des activités toujours plus proche de tes centres
-                        d’intêret
+                        Accumule les points, créer le meilleur avatar et nargue tes amis!
                     </p>
 
                 </div>
@@ -235,7 +240,7 @@
 
             </div>
 
-            <div class="flex space-around margin-bottom-250 justify-flexstart">
+            <div class="flex space-around margin-bottom-200 justify-flexstart" data-aos="fade-left" data-aos-duration="3000" >
 
                 <img src="assets/activite4.png" class="w-50 " alt="">
 
@@ -243,8 +248,7 @@
 
                     <h2 class="">DÉPENSE TES POINTS </h2>
                     <p class="">
-                        L’app mémorise tes choix pour te proposer des activités toujours plus proche de tes centres
-                        d’intêret
+                        Visite le shop, fais toi plaisier et collectionnes les skins les plus incroyables!
                     </p>
 
                 </div>
@@ -258,18 +262,21 @@
 
         </section>
 
-        <section class="container masterCard">
+        <section class="container masterCard2 margin-bottom-100">
 
             <div class="flex space-around margin-bottom-250 ">
 
-                <img src="assets/deux_persos.png" class="w-60 transform-section5-1" alt="">
+                <img src="assets/deux_persos.png" class="w-65 transform-section5-1" alt="">
 
-                <div class="w-33 transform-section4-1">
+                <div class="w-33 transform-section5-1bis ">
 
-                    <h2 class="">REJOINS LA TEAM VOPOCHALLENGE </h2>
-                    <p class="">
-                        A well-designed gaming header often incorporates elements such as game characters, iconic symbols, vibrant colors, and dynamic visuals to convey excitement, adventure, and the immersive nature of gaming.
+                    <h2 class="">REJOINS LA TEAM VAPOCHALLENGE </h2>
+                    <p class="margin-bottom-50">
+                        Soyez prêts à relever des challenge.
                     </p>
+            <a href="" class=" btn-tri  ">
+                Télécharger
+            </a>
 
                 </div>
 
@@ -277,33 +284,86 @@
 
             </div>
 
-            
+
         </section>
 
         <!-- Section 4 : avis utilisateur -->
+        <section class="section-bg1 section-bg2 padding-top margin-top-minus-250">
 
-        <section class="container-1000">
+            <div class="container-1000 padding-40">
 
-            <div class="flex space-between">
-                <!-- ma première div -->
-                <div class="w-48">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
+                <div class="flex space-between">
 
-                    <p class="paragrapheSection4 margin-top-15"><b>VapoChallenge</b> m’a vraiment aidé à réduire ma dépendance à la cigarette électronique. Les défis
-                        sont fun et motivants, et on voit ses progrès ! Je ne pensais pas que j’y arriverais, mais là ça
-                        devient presque un jeu.</p>
+                    
+                    
+                    <!-- ma première div -->
+                    <div class="w-48 cardAvis">
+                        <img src="assets/bandeau.png" class="w-20" alt="">
+                        <div class="flex gap-3">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
 
-            
+                        <p class="paragrapheSection4 margin-top-15"><b>VapoChallenge</b> m’a vraiment aidé à réduire ma
+                            dépendance à la cigarette électronique. Les défis
+                            sont fun et motivants, et on voit ses progrès ! Je ne pensais pas que j’y arriverais, mais
+                            là ça
+                            devient presque un jeu.</p>
+                        <div class="trait margin-top-40"  ></div>
+
+                        <div class=" flex align-center space-between">
+                            <div>
+                            
+                             <div class="flex space-between align-center gap-5 margin-top-15">
+                             
+                                <img src="assets/user1.png" alt="" class="w-10 imgAvis">
+                               <div>
+                                <p class="pNom">Arlene McCoy</p>
+                                <p class="pEntreprise margin-top-5">McDonald's</p>
+                               </div>
+                              </div>
+
+                            </div>
+                            <div class="flex space-between align-center gap-5">
+                             <img src="assets/avis_checked.png" alt="">
+                            <p class="pVerified">Verified</p></div>
+                        </div>
+
+
+                    </div>
+
+
+                    <!-- ma deuxième div -->
+                    <div class="w-48 cardAvis">
+                        <div class="flex gap-3">
+                        <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i
+                            class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i></div>
+
+                        <p class="paragrapheSection4 margin-top-15">Super appli. Les challenges quotidiens sont bien pensés et accessibles. On se sent soutenu, pas seul dans l’arrêt. Je recommande à tous ceux qui veulent arrêter sans pression</p>
+                        <div class="trait margin-top-40"  ></div>
+
+                        <div class=" flex align-center space-between">
+                            <div>
+                            
+                             <div class="flex space-between align-center gap-5 margin-top-15">
+                             
+                                <img src="assets/user2.png" alt="" class="w-10 imgAvis">
+                               <div>
+                                <p class="pNom">Kathryn Murphy</p>
+                                <p class="pEntreprise margin-top-5">General Electric</p>
+                               </div>
+                              </div>
+
+                            </div>
+                            <div class="flex space-between align-center gap-5">
+                             <img src="assets/avis_checked.png" alt="">
+                            <p class="pVerified">Verified</p></div>
+                        </div>
+
+
+                    </div>
+
                 </div>
 
-            <!-- ma deuxième div -->
-                <div class="w-48">
-                    <i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i><i class="ph-fill ph-star"></i>
-
-                    <p>Super appli. Les challenges quotidiens sont bien pensés et accessibles. On se sent soutenu, pas seul dans l’arrêt. Je recommande à tous ceux qui veulent arrêter sans pression</p>
-
-            
-                </div>
         </section>
 
 
@@ -348,7 +408,9 @@
 
 
 
-
+<script>
+  AOS.init();
+</script>
 </body>
 
 </html>
