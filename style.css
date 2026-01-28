@@ -574,6 +574,9 @@ header {
 /*-------------------------------------------------------------------------------------------*/
 /* section 1 :  bannière du site - adem */
 
+.video-bg{
+    width: 130%;
+}
 .section-hero {
     background-color: #260356;
     color: white;
@@ -820,6 +823,8 @@ p {
   display: block;
   margin: 0 auto; 
 }
+
+
 
 m-section3-1 {
     transform: translate(200px, 180px);
