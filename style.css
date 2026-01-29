@@ -990,36 +990,53 @@ m-section3-1 {
     background: #9C30F0;
 }
 
-/*marquee*/
-/* Conteneur visible */
-.flex-m {
-    display: flex;
-    width: max-content;
-    overflow: hidden;
-    flex-wrap: nowrap;
-    animation: marquee 20s linear infinite;
-    gap: 16px;
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  background: #000;
+  padding: 15px 0;
 }
 
-
-
-/* Chaque bloc */
-.avantage {
-
-    padding: 2rem 2rem;
-    width: 250px;
-    background-color: lightgrey;
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll 18s linear infinite;
 }
 
-/* Animation */
-@keyframes marquee {
-    0% {
-        transform: translateX(0);
-    }
+.marquee-content {
+  display: flex;
+  align-items: center;
+}
 
-    100% {
-        transform: translateX(-50%);
-    }
+.item {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  padding: 0 30px;
+  white-space: nowrap;
+}
+
+.text {
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  font-family: Arial, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.icon {
+  height: 23px;
+  width: auto;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /*-------------------------------------------------------------------------------------------*/
