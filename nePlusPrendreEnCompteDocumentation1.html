@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- on a bien change le titre -->
-    <title>VapoChallenge | Accueil</title>
+    <title>VapoChallenge</title>
 
 
     <!-- lien vers phosphore icone -->
@@ -27,13 +27,18 @@
 
 
 
-    <!-- lien vers nos polices -->
+    <!-- lien vers notre police : knewave -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Knewave&display=swap" rel="stylesheet">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Epilogue:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Knewave&display=swap"
         rel="stylesheet">
 
+    <!-- fin vers notre police : knewave -->
 
 
 
@@ -45,9 +50,7 @@
     <link rel="stylesheet" href="style.css">
     <!-- fin vers notre css -->
 
-    <!-- aos -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
 </head>
 
 <body>
@@ -56,34 +59,32 @@
     <!-- ouuuuh notre jolie tete blonde ! -->
 
     <!-- mon parent ! -->
-    <header class="flex space-around align-center gap-20">
+    <header class="flex space-around align-center">
 
         <!-- mon premier enfant -->
-        <a href="index.html" class="w-33 ">
+        <a href="index.html" class="w-23">
             <img src="assets/logo_vapochallenge.png"
-                alt="notre super logo qui dechire jusqu'en enfer, highway to hell my bro!" class="w-33">
+                alt="notre super logo qui dechire jusqu'en enfer, highway to hell my bro!" class="w-50">
         </a>
 
 
         <!-- mon deuxieme enfant qui est aussi un parent -->
-        <div class="flex w-40 space-between  padding-30">
+        <div class="flex w-33 space-between">
 
-            <nav class="w-65 ">
+            <nav class="w-60">
 
-                <ul class="flex space-between align-center capsule ">
+                <ul class="flex space-between align-center capsule">
 
-                    <li class=""><a href="index.html" class="btn-primary padding-5"> <i
-                                class="ph ph-house"></i>Accueil</a></li>
+                    <li class=""><a href="index.html" class="btn-primary"> <i class="ph ph-house"></i>Accueil</a></li>
 
-                    <li class=""><a href="documentation.html" class="btn-secondary padding-5"> <i
-                                class="ph ph-files"></i>
+                    <li class=""><a href="documentation.html" class="btn-secondary"> <i class="ph ph-files"></i>
                             Documentation</a></li>
 
                 </ul>
 
             </nav>
 
-            <a href="" class="w-25 btn-tri space-around padding-30">
+            <a href="" class="w-25 btn-tri space-around">
                 Télécharger
             </a>
 
@@ -96,7 +97,6 @@
     </header>
 
 
-    <!-- ne pas oublie le main nico le robot! -->
     <main class="container">
 
 
@@ -360,7 +360,7 @@
 
     <!-- ouuuuh la belle manicure ! -->
 
-    <footer class="bgFooter colorWhite flex padding-40  " id="contact">
+    <footer class="bgFooter colorWhite flex padding-40 " id="contact">
         <div class="bas flex justify-center container">
             <div class="flex space-between">
                 <!-- ma première div -->
@@ -368,11 +368,11 @@
 
                     <img src="assets/logo_footer.png" alt="" class="w-23">
 
-                    <p class="w-52  txtWhite pFooter policeEpilogue">Rejoins la communauté Vapo Challenge et libère-toi
-                        enfin de la cigarette électronique ! </p>
+                    <p class="w-52  txtWhite pFooter policeEpilogue">Rejoignez la communauté Vapo Challenge et
+                        libérez-vous de votre addiction à la cigaretté électronique ! </p>
 
                     <div class="margin-top-10 w-100"><i class="ph-fill ph-instagram-logo txtWhite"></i>
-                        <i class="ph-fill ph-linkedin-logo" txtWhite"></i>
+                        <i class="ph-fill ph-linkedin-logo txtWhite"></i>
                     </div>
 
 
@@ -393,9 +393,8 @@
 
 
 
-    <script>
-        AOS.init();
-    </script>
+
+
 </body>
 
 </html>

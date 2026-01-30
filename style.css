@@ -596,7 +596,7 @@ header {
 }
 
 .section-bg1 {
-    background-image: url(assets/bg-Patern2.png);
+    background-image: url(assets/bg-Patern3.png);
     
     background-repeat: no-repeat;
     background-size: cover;
@@ -623,7 +623,7 @@ h1 {
 
 h2 {
 
-    font-size: 40px;
+    font-size: 60px;
     font-weight: 300;
     color: white;
 
@@ -693,6 +693,8 @@ h3 {
 /*-------------------------------------------------------------------------------------------*/
 /* Section 2 : theme - vincent */
 
+
+ 
 /* background de ma section présentation*/
 .bgViolet {
     background-color: #260356;
@@ -710,7 +712,7 @@ h3 {
 }
 
 .section-bg-theme1 {
-    background-image: url(assets/bg-Patern2.png);
+    background-image: url(assets/bg-Patern3.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -811,6 +813,13 @@ p {
 
 
 
+.sizeSpe {
+
+    width: 50%;
+    height: 50;
+
+}
+
 
 
 
@@ -818,7 +827,7 @@ p {
 /* Section 3 : fonctionnement*/
 
 .ma-video {
-  width: 50%;
+  width: 60%;
   max-width: 900px;
   display: block;
   margin: 0 auto; 
@@ -826,33 +835,40 @@ p {
 
 
 
-m-section3-1 {
-    transform: translate(200px, 180px);
+.transform-section3-1 {
+    transform: translate(60px, 160px);
+z-index: 1;
 
+}
+
+.transform-section3-12 {
+    transform: translate(60px, 120px);
+z-index: 1;
 
 }
 
 .transform1-section3-1bis {
-    transform: translate(350px, 0px);
+    transform: translate(-80px, 0px);
+    
 
 
 }
 
 .transform-section4-1 {
-    transform: translate(-150px, 180px);
+    transform: translate(-170px, 160px);
 
 
 
 }
 
 .transform1-section4-1bis {
-    transform: translate(150px, -10px);
+    transform: translate(85px, -10px);
 
 
 }
 
 .transform-section5-1 {
-    transform: translate(-100px, -100px);
+    transform: translate(0px, 0px);
 
 
 
@@ -993,8 +1009,21 @@ m-section3-1 {
 .marquee-container {
   width: 100%;
   overflow: hidden;
-  background: #000;
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
+
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2) 0%,  
+    rgba(255, 255, 255, 0) 20%,   
+    rgba(255, 255, 255, 0) 80%,   
+    rgba(255, 255, 255, 0.2) 100%
+  );
   padding: 15px 0;
+
+  /* ROTATION DE TOUTE LA MARQUEE */
+  transform: rotate(-1deg);
+  transform-origin: center;
 }
 
 .marquee-track {
@@ -1038,7 +1067,6 @@ m-section3-1 {
     transform: translateX(-50%);
   }
 }
-
 /*-------------------------------------------------------------------------------------------*/
 /* footer*/
 
