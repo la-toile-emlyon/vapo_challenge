@@ -84,10 +84,18 @@ deux dimensions diponibles 1000 et 800 */
 .container {
     max-width: 1000px;
     margin-left: auto;
-    margin-right: 0px;
+    margin-right: auto;
     width: 100%;
 }
 
+
+/* CONTAINER doc */
+.container2 {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: 0px;
+    width: 100%;
+}
 
 .container-1000-with-gap {
     max-width: 1000px;
