@@ -112,8 +112,9 @@
 
 
                 <nav class="menu-fixe">
-                    <h3>Sommaire</h3>
+                    <h3 class="txtNoir">Sommaire</h3>
                     <a href="#contexte">Contexte</a>
+                    <a href="#chiffres">Les chiffres</a>
                     <a href="#persona">Persona</a>
                     <a href="#concept">Concept</a>
                     <a href="#user-flow">User flow</a>
@@ -138,7 +139,7 @@
 
         <!-- Section 2 : contexte-->
 
-        <section class="masterCard container-1000 transform-bloc padding-40">
+        <section class="masterCard container-1000 transform-bloc padding-40" id="contexte">
             <h2>CONTEXTE</h2>
             <p>L’application propose une solution innovante pour accompagner les utilisateurs dans la réduction de leur
                 consommation de vapotage, grâce à un suivi intelligent et des activités engageantes.
@@ -161,7 +162,7 @@
 
         <!-- Section 3 : les chiffres-->
 
-        <section>
+        <section id="chiffres">
             <div class="section-bg-theme1">
             </div>
 
@@ -215,9 +216,9 @@
         </section>
 
         <!-- div 3 : Problématique&Persona -->
-        <h3 class="flex justify-center margin-top-10 padding-20" id="persona">Persona & problématique</h3>
-        <section>
-
+            <section id="persona">
+  <h3 class="flex justify-center margin-top-10 padding-20" id="persona">Persona & problématique</h3>
+  
             <!-- ma carte pour le persona-->
             <div class="flex space-between justify-center">
 
@@ -252,7 +253,7 @@
         </section>
 
 
-        <section class="bgviolet" id="SOMMAIRE">
+        <section class="bgviolet" id="concept">
             <!-- div 4 : Moustapha concept -->
             <h3 class="flex justify-center margin-top-10 padding-20" id="concept">Concept</h3>
             <div class="flex justify-center">
@@ -267,6 +268,7 @@
                 </div>
             </div>
 
+            <section id="user-flow">
             <!-- div 5 : Moustapha user flow -->
             <h3 class="flex justify-center margin-top-10 padding-20" id="user-flow">User flow</h3>
             <div>
@@ -274,7 +276,9 @@
                     <img src="assets/userflow.png" class="W-500" alt="">
                 </div>
             </div>
+</section>
 
+<section id="low-fi">
             <!-- div 6 : low-fi Moustapha -->
             <h3 class="flex justify-center margin-top-10 padding-20" id="low-fi">Low-fi</h3>
             <div>
@@ -298,7 +302,8 @@
                     </div>
                 </div>
             </div>
-
+</section>
+ <section id="mid-fi">
             <!-- div 7 :Mid-fi Moustapha  -->
             <h3 class="flex justify-center margin-top-10 padding-20">Mid-fi</h3>
             <div class="flex space-around gaphi">
@@ -316,7 +321,9 @@
                 </div>
 
             </div>
-
+</section>
+           
+<section id="prototype">
             <!-- div 8 : Prototype Moustapha -->
             <h3 class="flex justify-center margin-top-10 padding-20" id="prototype">Prototype</h3>
             <div>
@@ -326,6 +333,10 @@
                         allowfullscreen></iframe>
                 </div>
             </div>
+
+            </section>
+
+            <section id="test-utilisateur">
             <!-- div 9 : Test utilisateur Moustapha -->
             <h3 class="flex justify-center margin-top-10 padding-20" id="test-utilisateur">Test utilisateur</h3>
             <div>
@@ -373,7 +384,9 @@
                     </div>
                 </div>
             </div>
+</section>
 
+<section id="perspective">
             <!--Section 10 : Moustapah Perspective d’évolution-->
             <h3 class="flex justify-center margin-top-10 margin-b" id="perspective">Perspective d’évolution</h3>
 
@@ -403,7 +416,7 @@
 
 
         <!--  section l'équipe -->
-        <section>
+        <section id="equipe">
 
             <h3 class="flex justify-center">Une équipe de choc</h3>
             <div class="flex space-between w-100 ">
@@ -486,6 +499,34 @@
     <script>
         AOS.init();
     </script>
+
+       <script>
+        AOS.init();
+    </script>
+    <script>
+const sections = document.querySelectorAll("section");
+const menuLinks = document.querySelectorAll(".menu-fixe a");
+
+window.addEventListener("scroll", () => {
+    let currentSection = "";
+
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.offsetHeight;
+
+        if (scrollY >= sectionTop - 150 && scrollY < sectionTop + sectionHeight) {
+            currentSection = section.getAttribute("id");
+        }
+    });
+
+    menuLinks.forEach(link => {
+        link.classList.remove("active");
+        if (link.getAttribute("href") === `#${currentSection}`) {
+            link.classList.add("active");
+        }
+    });
+});
+</script>
 </body>
 
 </html>
