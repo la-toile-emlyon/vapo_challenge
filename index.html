@@ -507,6 +507,11 @@
                     <p class="w-52  txtWhite pFooter policeEpilogue">Rejoins la communauté Vapo Challenge et libère-toi
                         enfin de la cigarette électronique ! </p>
 
+
+                          <div class="counter-box">
+    <div class="number" id="counter">12 458</div>
+    <div class="text">personnes ont déjà rejoint l’appli</div>
+  </div>
                     <div class="margin-top-10 w-100"><i class="ph-fill ph-instagram-logo txtWhite"></i>
                         <i class="ph-fill ph-linkedin-logo" txtWhite"></i>
                     </div>
@@ -532,6 +537,17 @@
     <script>
         AOS.init();
     </script>
+    <script>
+    let counter = 12458;
+    const counterElement = document.getElementById("counter");
+
+    setInterval(() => {
+      const increment = Math.floor(Math.random() * 3) + 1; // +1 à +3
+      counter += increment;
+      counterElement.textContent = counter.toLocaleString("fr-FR");
+    }, 2000); // toutes les 2 secondes
+  </script>
+
 </body>
 
 </html>

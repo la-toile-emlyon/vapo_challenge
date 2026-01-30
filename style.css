@@ -854,7 +854,7 @@ p {
     background-color: #9d30f02a;
     border: solid, #9C30F0;
     border-radius: 20px;  
-    height: 350px;  
+    
 
 
 }
@@ -1159,6 +1159,27 @@ z-index: 1;
     background-color: #996830;
     color: white;
 }
+
+/* counter */
+.counter-box {
+      text-align: center;
+      background: #1e1e1e;
+      padding: 30px 50px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+
+    .number {
+      font-size: 48px;
+      font-weight: bold;
+      color: #00ff88;
+    }
+
+    .text {
+      font-size: 18px;
+      margin-top: 10px;
+      opacity: 0.8;
+    }
 
 
 /* paragraphe dans mon footer */
