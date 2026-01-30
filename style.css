@@ -653,6 +653,16 @@ h4 {
 
 }
 
+h6{
+
+    font-size: 20px;
+    font-weight: 300;
+    color: #FFFF;
+    
+
+
+}
+
 
 h3 {
 
@@ -825,6 +835,10 @@ p {
     top: -165px;
 }
 
+.transformSpe {
+    transform: translate(20px, 100px);
+}
+
 .backspecial3 {
 
     background-color: #9d30f02a;
@@ -832,6 +846,25 @@ p {
     border-radius: 20px;
     height: 350px;
 
+
+}
+
+.backspecial31 {
+
+    background-color: #9d30f02a;
+    border: solid, #9C30F0;
+    border-radius: 20px;  
+    height: 350px;  
+
+
+}
+
+.backspecial32 {
+
+    background-color: #9d30f02a;
+    border: solid, #9C30F0;
+    border-radius: 20px;    
+    
 
 }
 
@@ -1251,7 +1284,7 @@ z-index: 1;
 }
 /*taille du cràne a yanis class faite par mous*/
 .img-taille {
-    width: 55px;
+    width: 200px;
     border-radius: 60%;
 }
 
