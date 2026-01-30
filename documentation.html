@@ -56,7 +56,7 @@
     <!-- ouuuuh notre jolie tete blonde ! -->
 
     <!-- mon parent ! -->
-    <header class="flex space-around align-center gap-20">
+    <header class="flex space-around align-center gap-20" id="header">
 
         <!-- mon premier enfant -->
         <a href="index.html" class="w-33 ">
@@ -75,8 +75,7 @@
                     <li class=""><a href="index.html" class=" btn-secondary padding-5"> <i
                                 class="ph ph-house"></i>Accueil</a></li>
 
-                    <li class=""><a href="documentation.html" class="btn-primary padding-5"> <i
-                                class="ph ph-files"></i>
+                    <li class=""><a href="documentation.html" class="btn-primary padding-5"> <i class="ph ph-files"></i>
                             Documentation</a></li>
 
                 </ul>
@@ -97,206 +96,288 @@
 
 
     <!-- ne pas oublie le main nico le robot! -->
-    <main class="container">
+    <main class="">
 
 
-       
         <!-- Section 1 : ma super section superhero -->
-        <section class="flex space-between align-center">
+        <section class="flex space-between align-center container2">
 
-            <div class="w-48"> 
+            <div class="w-48">
                 <h1 class=" colorWhite">Documentation</h1>
-                <p class="margin-top-5">Tout savoir sur la conception de Vapochallenge, la solution pour arréter la vapoteuse tout en accomplisant des challenges amusant.</p>
+                <p class="margin-top-5">Tout savoir sur la conception de Vapochallenge, la solution pour arréter la
+                    vapoteuse tout en accomplisant des challenges amusant.</p>
             </div>
 
             <img src="assets/header_documentation.png" class="w-48" alt="">
+
         </section>
 
         <section class="flex align-center"> <!-- sommaire et contexte -->
+
             <div class="flex space-between">
 
 
- <nav class="menu-fixe">
-    <h3 class="txtNoir">Sommaire</h3>
-    <a href="#contexte">Contexte</a>
-    <a href="#persona">Persona</a>
-    <a href="#concept">Concept</a>
-    <a href="#user-flow">User flow</a>
-    <a href="#low-fi">Low-fi</a>
-    <a href="#mid-fi">Mid-fi</a>
-    <a href="#prototype">Prototype</a>
-    <a href="#test-utilisateur">Test utilisateur</a>
-    <a href="#perspective">Perspective d’évolution</a>
-        <a href="#equipe">Equipe</a>
-</nav>
- 
+                <nav class="menu-fixe">
 
-                <!-- div  2 :  Moustapha Context -->
+                    <h3 class="txtBlanc">Sommaire</h3>
+                    <a href="#contexte">Contexte</a>
+                    <a href="#chiffres">Les chiffres</a>
+                    <a href="#persona">Persona</a>
+                    <a href="#concept">Concept</a>
+                    <a href="#user-flow">User flow</a>
+                    <a href="#low-fi">Low-fi</a>
+                    <a href="#mid-fi">Mid-fi</a>
+                    <a href="#prototype">Prototype</a>
+                    <a href="#test-utilisateur">Test utilisateur</a>
+                    <a href="#perspective">Perspective d’évolution</a>
+                    <a href="#equipe">Equipe</a>
 
+                </nav>
 
-
-<section id="contexte">
-                <div class="ml w-40 txtBlanc">
-                    <h3 class="flex justify-center margin-top-10 padding-20" >Contexte</h3>
-
-                    <p>L’application permet de visualiser la consommation de vapotage, comment ?
-                        avec une vapoteuse en ligne ou un plug qui permet de connecter la vapoteuse à l’application.
-                    </p>
-                    <p>
-                        Elle montre à la personne combien de temps d’utilisation et proposer des défis ou activité
-                        pour
-                        réduire le temps de vapotage.
-                        exemple dans notre cas, l’utilisateur vas choisir une activité manuelle qui va lui faire
-                        oublier
-                        de
-                        vapoter tout en utilisant ses mains, ici le macramé
-                        une video va se lancer et il devra reproduire et valider sa réalisation avec une photo prise
-                        de
-                        son
-                        oeuvre d’art : plusieurs niveau avec plusieurs video avec des difficulté de plus en plus dur
-                        système de réponse de point qu’on pourra utiliser sur un e shop interne avec achat de AVATAR
-                        ou
-                        SKIN
-                    </p>
-
-                </div>
-</section>
 
             </div>
+
         </section>
 
-            <section id="persona">
+        <!-- Section 2 : contexte-->
 
-        <!-- div 3 : Problématique&Persona -->
-        <h3 class="flex justify-center margin-top-10 padding-20" >Persona & problématique</h3>
-    
-            <!-- ma carte pour le persona-->
-            <div class="flex space-between justify-center">
+        <section class="masterCard container-1000 transform-bloc padding-40" id="contexte">
+            <h2>CONTEXTE</h2>
+            <p>L’application propose une solution innovante pour accompagner les utilisateurs dans la réduction de leur
+                consommation de vapotage, grâce à un suivi intelligent et des activités engageantes.
+            </p>
 
-                <div class="card">
+            <p class="margin-top-10">
+                Connectée à une vapoteuse compatible (en ligne ou via un plug), l’application permet de visualiser
+                précisément le temps d’utilisation et d’analyser les habitudes de vapotage. Ces données servent de base
+                à un accompagnement personnalisé, orienté vers la diminution progressive de la consommation.
+            </p>
 
+            <p class="margin-top-10">
+                Pour encourager le changement, l’application intègre un système de défis et d’activités alternatives.
+                L’utilisateur est invité à choisir des activités manuelles conçues pour mobiliser les mains et
+                l’attention, réduisant ainsi l’envie de vapoter. Ici, le l'origami est proposé à travers des
+                vidéos tutoriels interactives.
+            </p>
+            <p class="margin-top-10">
+                Le parcours est gamifié : les activités sont organisées par niveaux de difficulté croissante.
+            </p>
+
+            <p class="margin-top-10">
+                Une fois
+                l’activité réalisée, l’utilisateur valide son défi en partageant une photo de sa création.
+            </p>
+
+            <p class="margin-top-5">
+                Chaque défi réussi permet de gagner des points, échangeables dans un e-shop intégré. Ces points peuvent
+                être utilisés pour personnaliser l’expérience utilisateur via l’achat d’avatars, de skins ou d’éléments
+                visuels exclusifs.
+            </p>
+
+
+        </section>
+
+        <!-- Section 3 : les chiffres-->
+
+        <section id="chiffres" class="">
+
+            <div class="section-bg-theme1">
+                <h2 class="text-center margin-top-40">LES CHIFFRES</h2>
+            </div>
+
+
+
+            <div class="flex space-between container-1000 margin-top-minus-250 transform-bloc ">
+
+                <div class="backspecial3 w-30  ">
+
+                    <img src="assets/perso1_doc.png" class="transform1 opacity1 w-100" alt="">
+
+                    <div class="padding-10 transform1bisDoc w-70">
+
+                        <h3 class="">14,1 ans !</h3>
+
+                        <p class="margin-top-10 ">
+
+
+                            C’est l’âge de la première cigarette </p>
+
+                    </div>
+
+                </div>
+
+                <div class="backspecial3 w-30 flex item-center justify-center ">
+
+
+
+                    <div class="transform2bisDoc padding-10 w-90 ">
+
+                        <h2 class="text-center ">31%</h2>
+
+                        <p class="margin-top-10 text-center ">
+                            Nombre de fumeurs en France
+                        </p>
+
+                    </div>
+
+                </div>
+
+                <div class="backspecial3 w-30 ">
+
+                    <img src="assets/theme3.png" class="transform3doc w-110" alt="">
+
+                    <div class="transform3bis padding-10 w-65 ">
+                        <h3>66 000</h3>
+                        <p>Nombre de morts par an en France</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+        </section>
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="persona">
+
+            <h2 class="text-center">PERSONAE & PROBLEMATIQUE</h2>
+
+            <div class="flex space-between align-center ">
+
+                <div class=" w-60">
+
+                    <img src="assets/perso2_doc.png" class="transformSpe " alt="">
+
+                    <h4 class="backspecial32 padding-30">
+                        Comment transformer l’arrêt de la cigarette électronique de Yanis en une expérience motivante et
+                        valorisante ?
+                    </h4>
+
+
+                </div>
+
+
+                <div class="backspecial31 w-33 text-center padding-20">
                     <img src="assets/yanis.png" class="img-taille" alt="">
+                    <h6>
+                        Objectif
+                    </h6>
 
-                    <p>Yanis</p>
+                    <p>
+                        Il cherche à être le meilleur de lui-même
+                    </p>
 
-                    <p class="txtYellow">Objectif</p>
+                    <h6>
+                        Frustration
+                    </h6>
 
-                    <p>il cherche à être le meilleur de lui même</p>
-
-                    <p class="txtYellow">Frustration</p>
-                    <ul>
-                        <li class="txtBlanc">il à un mal-être</li>
-
-                        <li class="txtBlanc">il veut arrêter son addiction</li>
-
-                        <li class="txtBlanc">il à du mal à respirer</li>
-
+                    <ul class="txtBlanc">
+                        <li>il a un mal-être</li>
+                        <li>il veut arrêter son addiction</li>
+                        <li>il a du mal à respirer</li>
                     </ul>
-                </div>
-                <!--Ma caarte pour la problématique-->
-                <div class="card">
-                    <p>Comment motiver et accompagner Yanis dans son arrêt de la cigarette éléctronique ? </p>
+
+
 
                 </div>
+
 
             </div>
+        </section>
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="concept">
+
+
+            <h2 class="text-center margin-top-40">CONCEPT</h2>
+
+            <p class="margin-bottom-50">
+                L’application propose une solution innovante pour accompagner les utilisateurs dans la réduction de
+                leur consommation de vapotage, grâce à un suivi intelligent et des activités engageantes.
+                Connectée à une vapoteuse compatible (en ligne ou via un plug), l’application permet de visualiser
+                précisément le temps d’utilisation et d’analyser les habitudes de vapotage. Ces données servent de
+                base à un accompagnement personnalisé, orienté vers la diminution progressive de la consommation.
+                Pour encourager le changement, l’application intègre un système de défis et d’activités
+                alternatives. L’utilisateur est invité à choisir des activités manuelles conçues pour mobiliser les
+                mains et l’attention, réduisant ainsi l’envie de vapoter. Par exemple, le macramé est proposé à
+                travers des vidéos tutoriels interactives.
+                Le parcours est gamifié : les activités sont organisées par niveaux de difficulté croissante. Une
+                fois l’activité réalisée, l’utilisateur valide son défi en partageant une photo de sa création.
+                Chaque défi réussi permet de gagner des points, échangeables dans un e-shop intégré. Ces points
+                peuvent être utilisés pour personnaliser l’expérience utilisateur via l’achat d’avatars, de skins ou
+                d’éléments visuels exclusifs.
+
+
+            </p>
+
+        </section>
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="user-flow">
+
+            <div class="flex space-around margin-bottom-50 margin-top-50" id="user-flow">
+
+                <h2 class="text-center margin-top-40">user-flow</h2>
+
+                <img src="assets/userflow.png" class="W-100 " alt="">
+
+            </div>
+
+
+
+        </section>
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="low-fi">
+
+
+            <h2 class="text-center margin-top-40">LOW-FI</h2>
+
+
 
         </section>
 
 
-        <section class="bgviolet" id="concept">
-            <!-- div 4 : Moustapha concept -->
-            <h3 class="flex justify-center margin-top-10 padding-20">Concept</h3>
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="mid-fi">
+
+            <h2 class="text-center margin-top-40">MID-FI</h2>
+
+
+        </section>
+
+
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="prototype">
+
+            <h2 class="text-center margin-top-40">Prototype</h2>
+
             <div class="flex justify-center">
-                <div>
-                    <p>Une application (sur téléphone) qui va occuper les mains des jeunes et leur donner des pures
-                        shots de
-                        dopamine.
-                        une application avec ambiance gaming bien sûr! une ambiance qui va donner du plaisir, une
-                        ambiance
-                        qui va donner des shots de dopamine.
-                        Vos deux mains sont occupés et donc ici impossible de tenir une cigarette électronique.</p>
-                </div>
+                <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
+                    src="https://embed.figma.com/proto/hzxPncoWfZRwb5H9hkmwWV/groupe-3-adem-hissein-vincent-moustapha-?node-id=5977-1551&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5977%3A1551&show-proto-sidebar=0&embed-host=share&hide-ui=1"
+                    allowfullscreen></iframe>
             </div>
 
-            <section id="user-flow">
-            <!-- div 5 : Moustapha user flow -->
-            <h3 class="flex justify-center margin-top-10 padding-20" >User flow</h3>
-            <div>
-                <div class="flex justify-center">
-                    <img src="assets/userflow.png" class="W-500" alt="">
-                </div>
-            </div>
-</section>
-            <!-- div 6 : low-fi Moustapha -->
-             <section id="low-fi" >
-            <h3 class="flex justify-center margin-top-10 padding-20" >Low-fi</h3>
-            <div>
-                <div class="flex space-between space-around">
-                    <div class="card-2 w-28 ">
-                        <img src="assets/lowfi2 1.png" class="card-img gap-20" alt="">
 
-                        <p>Page d’accomplisment des défis</p>
+        </section>
 
-                    </div>
 
-                    <div class="card-2 w-28 ">
-                        <img src="assets/lowfi4 1.png" class="card-img gap-20" alt="">
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="test-utilisateur">
 
-                        <p>Page de la boutique et des récompenses</p>
-                    </div>
-                    <div class="card-2 w-28 ">
-                        <img src="assets/lowfi5 1.png" class="card-img gap-20" alt="">
+            <h2 class="text-center margin-top-40">TEST UTILISATEURS</h2>
 
-                        <p>Page d’accueil et d’activité </p>
-                    </div>
-                </div>
-            </div>
-</section>
-            <section id="mid-fi">
-            <!-- div 7 :Mid-fi Moustapha  -->
-            <h3 class="flex justify-center margin-top-10 padding-20">Mid-fi</h3>
-            <div class="flex space-around gaphi">
-                <div class="w-40">
-                    <img src="assets/image 14.png" alt="">
-                </div>
-                <div class="w-40">
-                    <img src="assets/image 15.png" alt="">
-                </div>
-                <div class="w-40">
-                    <img src="assets/image 25 1.png" alt="">
-                </div>
-                <div class="w-40">
-                    <img src="assets/image 25.png" alt="">
-                </div>
-
-            </div></section>
-
-            <section id="prototype">
-            <!-- div 8 : Prototype Moustapha -->
-            <h3 class="flex justify-center margin-top-10 padding-20" >Prototype</h3>
-            <div>
-                <div class="flex justify-center">
-                    <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450"
-                        src="https://embed.figma.com/proto/hzxPncoWfZRwb5H9hkmwWV/groupe-3-adem-hissein-vincent-moustapha-?node-id=5977-1551&p=f&scaling=min-zoom&content-scaling=fixed&page-id=1%3A2&starting-point-node-id=5977%3A1551&show-proto-sidebar=0&embed-host=share&hide-ui=1"
-                        allowfullscreen></iframe>
-                </div>
-            </div>
-            <section  id="test-utilisateur">
-            <!-- div 9 : Test utilisateur Moustapha -->
-            <h3 class="flex justify-center margin-top-10 padding-20">Test utilisateur</h3>
             <div>
                 <div class="flex space-between justify-center">
                     <div class="w-40 gap-20 padding-10">
-                        <p class="">Utilisateur-1: aimerait plus d'animations de certaines transitions (comme lors des
+                        <p class="">Utilisateur-1: aimerait plus d'animations de certaines transitions (comme lors
+                            des
                             gains des
                             exp
-                            écran 10) lors des achats, il faut qu'il y a cohérence entre la dépense des exp et les exp
+                            écran 10) lors des achats, il faut qu'il y a cohérence entre la dépense des exp et les
+                            exp
                             restant
                             informer l'utilisateur que l'achat a été réalisé avec une notification qui informe
                             l'utilisateur
                             du
-                            nombre de jour non vapoter avoir une notation de flammes comme sur snap : quand tu n'as pas
+                            nombre de jour non vapoter avoir une notation de flammes comme sur snap : quand tu n'as
+                            pas
                             touché
                             la vapoteuse le nombre de flammes augmentent, quand tu touches la vapoteuse toutes tes
                             flammes
@@ -304,7 +385,8 @@
                         </p>
                     </div>
                     <div class="flex-vrap w-40 gaphi margin-bottom-50 margin-top-25"> <!-- 2 p -->
-                        <p class="gap-20">Utilisateur-2: aime beaucoup l'interface (trouve ça "cute").  aimerait plus
+                        <p class="gap-20">Utilisateur-2: aime beaucoup l'interface (trouve ça "cute").  aimerait
+                            plus
                             de loisir créatif
                             (comme
                             création de bijoux)
@@ -330,22 +412,27 @@
                     </div>
                 </div>
             </div>
-</section>
 
-<section id="perspective"> 
-            <!--Section 10 : Moustapah Perspective d’évolution-->
-            <h3 class="flex justify-center margin-top-10 margin-b" >Perspective d’évolution</h3>
+
+        </section>
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150" id="perspective">
+
+
+            <h2 class="text-center margin-top-40">Perspective d’évolution</h2>
 
             <div class="padding-10">
 
                 <div>
 
-                    <p>Voici les différentes perspectives d'évolutions que nous prévoyons de faire pour améliorer notre
+                    <p>Voici les différentes perspectives d'évolutions que nous prévoyons de faire pour améliorer
+                        notre
                         application</p>
 
                 </div>
                 <div>
-                    <p>-Ajoutez un rubrique pour les information sur les effefs néfaste de la cigarette électronique</p>
+                    <p>-Ajoutez un rubrique pour les information sur les effefs néfaste de la cigarette électronique
+                    </p>
                 </div>
                 <div>
                     <p>
@@ -357,33 +444,56 @@
                 </div>
             </div>
 
+
         </section>
 
-         <!--  section l'équipe -->
-        <section id="equipe">
-            
-            <h3 class="flex justify-center">Une équipe de choc</h3>
-        <div class="flex space-between w-100 ">
-            <div class="w-23 flex justify-center ">
-            <img src="assets/PHOTO1.png" class="w-98 imageEquipe"> <p>Vincent</p> 
-            <p>Phrase fétiche : "Ca va mec, laches moi un peu la grappe "</p>
-            <p>Team dev</p>
-</div>
-                 <div class="w-23 flex justify-center ">
-            <img src="assets/PHOTO2.png" class="w-98 imageEquipe"> <p>Mustapha</p> 
-            <p>Phrase fétiche : "Le talent, rien que le talent"</p>
-            <p>Team UX UI</p>
-</div>                <div class="w-23 flex justify-center ">
-            <img src="assets/PHOTO3.png" class="w-98 imageEquipe "> <p>Adem</p> 
-            <p>Phrase fétiche : "Le pixel perfect mec ! Allez "</p>
-            <p>Team dev - effet spéciaux </p>
-</div>                    <div class="w-23 flex justify-center ">
-            <img src="assets/PHOTO4.png" class="w-98 imageEquipe"> <p>Hissein</p> 
-            <p>Phrase fétiche : "T'inquiètes ça passe crème "</p>
-            <p>Team UX UI</p>
-</div>
-        </div>
-</section>
+
+
+        <section class="masterCard container-1000 transform-bloc padding-20 margin-top-150 margin-bottom-100" id="equipe">
+
+
+            <h2 class="text-center margin-top-40">Une équipe de choc</h2>
+
+
+            <div class="flex space-between w-100 ">
+                <div class="w-23 flex justify-center ">
+                    <img src="assets/PHOTO1.png" class="w-98 imageEquipe">
+                    <p>Vincent</p>
+                    <p>Phrase fétiche : "Ca va mec, laches moi un peu la grappe "</p>
+                    <p>Team dev</p>
+                </div>
+
+                <div class="w-23 flex justify-center ">
+                    <img src="assets/PHOTO2.png" class="w-98 imageEquipe">
+                    <p>Mustapha</p>
+                    <p>Phrase fétiche : "Le talent, rien que le talent"</p>
+                    <p>Team UX UI</p>
+                </div>
+                <div class="w-23 flex justify-center ">
+                    <img src="assets/PHOTO3.png" class="w-98 imageEquipe ">
+                    <p>Adem</p>
+                    <p>Phrase fétiche : "Le pixel perfect mec ! Allez "</p>
+                    <p>Team dev - effet spéciaux </p>
+                </div>
+                <div class="w-23 flex justify-center ">
+                    <img src="assets/PHOTO4.png" class="w-98 imageEquipe">
+                    <p>Hissein</p>
+                    <p>Phrase fétiche : "T'inquiètes ça passe crème "</p>
+                    <p>Team UX UI</p>
+                </div>
+            </div>
+
+
+        </section>
+
+
+
+
+
+
+
+
+
     </main>
 
 
@@ -426,30 +536,49 @@
     <script>
         AOS.init();
     </script>
+
     <script>
-const sections = document.querySelectorAll("section");
-const menuLinks = document.querySelectorAll(".menu-fixe a");
+        AOS.init();
+    </script>
+    <script>
+        const sections = document.querySelectorAll("section");
+        const menuLinks = document.querySelectorAll(".menu-fixe a");
 
-window.addEventListener("scroll", () => {
-    let currentSection = "";
+        window.addEventListener("scroll", () => {
+            let currentSection = "";
 
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        const sectionHeight = section.offsetHeight;
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop;
+                const sectionHeight = section.offsetHeight;
 
-        if (scrollY >= sectionTop - 150 && scrollY < sectionTop + sectionHeight) {
-            currentSection = section.getAttribute("id");
-        }
-    });
+                if (scrollY >= sectionTop - 150 && scrollY < sectionTop + sectionHeight) {
+                    currentSection = section.getAttribute("id");
+                }
+            });
 
-    menuLinks.forEach(link => {
-        link.classList.remove("active");
-        if (link.getAttribute("href") === `#${currentSection}`) {
-            link.classList.add("active");
-        }
-    });
-});
-</script>
+            menuLinks.forEach(link => {
+                link.classList.remove("active");
+                if (link.getAttribute("href") === `#${currentSection}`) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+    <script>
+        const menu = document.querySelector(".menu-fixe");
+        const contexte = document.getElementById("contexte");
+
+        window.addEventListener("scroll", () => {
+            const contexteTop = contexte.getBoundingClientRect().top;
+
+            if (contexteTop <= 100) {
+                menu.classList.add("visible");
+            } else {
+                menu.classList.remove("visible");
+            }
+        });
+    </script>
+
 </body>
 
 </html>
