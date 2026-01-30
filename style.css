@@ -1169,6 +1169,11 @@ z-index: 1;
 }
 
 
+.imageEquipe
+{
+    height:350px;
+      object-fit: cover;
+}
 /*taille du cràne a yanis class faite par mous*/
 .img-taille {
     width: 55px;
