@@ -166,6 +166,8 @@ deux dimensions diponibles 1000 et 800 */
     justify-content: flex-end;
 }
 
+
+
 .justify-flexstart {
     justify-content: flex-start;
 }
@@ -178,6 +180,11 @@ deux dimensions diponibles 1000 et 800 */
 
 .align-end {
     align-content: flex-end;
+}
+
+.item-end {
+
+align-items: flex-end;
 }
 
 .align-around {
@@ -274,7 +281,7 @@ deux dimensions diponibles 1000 et 800 */
 
 
 .w-45 {
-    width: 48%;
+    width: 45%;
 }
 
 .w-48 {
@@ -870,6 +877,7 @@ p {
     background-color: #9d30f02a;
     border: solid, #9C30F0;
     border-radius: 20px;
+    height: 500px;
 
 
 
@@ -1347,7 +1355,7 @@ p {
 
 /*taille du cràne a yanis class faite par mous*/
 .img-taille {
-    width: 200px;
+    width: 180px;
     border-radius: 60%;
 }
 
