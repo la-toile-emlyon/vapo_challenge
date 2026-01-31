@@ -815,6 +815,10 @@ p {
     transform: translate(-120px, -120px);
 }
 
+.transform1Doc {
+    transform: translate(-120px, -50px);
+}
+
 .transform1doc {
     transform: translate(-120px, -140px);
 }
@@ -829,6 +833,10 @@ p {
     transform: translate(90px, -480px);
 }
 
+.transform12bisDoc {
+    transform: translate(90px, -290px);
+}
+
 .transform1bis {
     transform: translate(20px, -170px);
 }
@@ -838,7 +846,11 @@ p {
 }
 
 .transform2bisDoc {
-    transform: translate(0px, 20px);
+    transform: translate(0px, 200px);
+}
+
+.transform23bisDoc {
+    transform: translate(0px, 100px);
 }
 
 
@@ -850,12 +862,24 @@ p {
     transform: translate(100px, -0px);
 }
 
+.transform32doc {
+    transform: translate(100px, -80px);
+}
+
 .transform3bis {
     transform: translate(-5px, -150px);
     position: relative;
     z-index: 2;
     left: 20px;
     top: -165px;
+}
+
+.transform32bis {
+    transform: translate(-5px, -150px);
+    position: relative;
+    z-index: 2;
+    left: 20px;
+    top: -190px;
 }
 
 .transformSpe {
