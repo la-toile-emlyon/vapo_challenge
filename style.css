@@ -184,7 +184,7 @@ deux dimensions diponibles 1000 et 800 */
 
 .item-end {
 
-align-items: flex-end;
+    align-items: flex-end;
 }
 
 .align-around {
@@ -1271,21 +1271,21 @@ p {
 /*LA DOCUMENTATION */
 
 .pdf-wrapper {
-  width: 100%;
-   height: 500px;
-  max-width: 900px;
-  aspect-ratio: 3 / 4;
-  margin: 0 auto;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 30px 80px rgba(0,0,0,.25);
-  
+    width: 100%;
+    height: 500px;
+    max-width: 900px;
+    aspect-ratio: 3 / 4;
+    margin: 0 auto;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, .25);
+
 }
 
 .pdf-wrapper iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
+    width: 100%;
+    height: 100%;
+    border: none;
 }
 
 .menu-fixe {
@@ -1311,7 +1311,7 @@ p {
     border-radius: 20px;
     padding: 10px;
     z-index: 1;
-    
+
 
 }
 
@@ -1324,7 +1324,7 @@ p {
 .menu-fixe a {
     display: block;
     margin-bottom: 8px;
-    color: white    ;
+    color: white;
     text-decoration: none;
     font-size: 14px;
 }
@@ -1412,3 +1412,18 @@ p {
 
 /*-------------------------------------------------------------------------------------------*/
 /* section 2 :  */
+
+
+.boderCARD {
+    border-radius: 0 0 10px 10px;
+    background-color: #9d30f02a;
+    border: solid, #9C30F0;
+    padding: 20px;
+}
+
+.boderCARD2 {
+    border-radius: 10px 10px 0 0 ;
+   
+    border: solid, #9C30F0;
+    
+}
