@@ -596,6 +596,15 @@ header {
 
 }
 
+header2 {
+    /* position: fixed; */
+    top: 0;
+    left: 0;
+    width: 100%;
+   
+
+}
+
 
 /*-------------------------------------------------------------------------------------------*/
 /* section 1 :  bannière du site - adem */
@@ -904,6 +913,16 @@ p {
     border: solid, #9C30F0;
     border-radius: 20px;
     height: 350px;
+
+
+}
+
+.backspecial32 {
+
+    background-color: #9d30f02a;
+    border: solid, #9C30F0;
+    border-radius: 20px;
+    height: 400px;
 
 
 }

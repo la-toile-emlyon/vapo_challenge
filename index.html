@@ -110,11 +110,11 @@
                 <div class="flex gap-40 margin-top-25  ">
 
                     <a href="telechargement.html" class="w-42">
-                    <img src="assets/google_play.png" class="w-100" alt="" >
+                        <img src="assets/google_play.png" class="w-100" alt="">
                     </a>
 
                     <a href="telechargement.html" class="w-42">
-                    <img src="assets/app_store.png" class="w-100" alt="" >
+                        <img src="assets/app_store.png" class="w-100" alt="">
                     </a>
 
                 </div>
@@ -536,10 +536,11 @@
 
                     <div class="margin-top-10 w-100">
 
-                        <a href="">
+                        <a href="https://www.instagram.com/les_mousaillons/" target="_blank">
                             <i class="ph-fill ph-instagram-logo txtWhite"></i>
                         </a>
-                        <a href=""></a>
+
+                        <a href="">
                         <i class="ph-fill ph-linkedin-logo"></i>
                         </a>
 
@@ -595,44 +596,44 @@
             }
         }
 
-let fireworksLaunched = false;
+        let fireworksLaunched = false;
 
-function launchFireworks() {
-  if (fireworksLaunched) return;
-  fireworksLaunched = true;
+        function launchFireworks() {
+            if (fireworksLaunched) return;
+            fireworksLaunched = true;
 
-  const container = document.getElementById("fireworks");
-  const totalBursts = 8;      // nombre de vagues
-  const particlesPerBurst = 45;
+            const container = document.getElementById("fireworks");
+            const totalBursts = 8;      // nombre de vagues
+            const particlesPerBurst = 45;
 
-  for (let burst = 0; burst < totalBursts; burst++) {
-    setTimeout(() => {
-      const centerX = Math.random() * window.innerWidth;
-      const centerY = Math.random() * window.innerHeight * 0.6;
+            for (let burst = 0; burst < totalBursts; burst++) {
+                setTimeout(() => {
+                    const centerX = Math.random() * window.innerWidth;
+                    const centerY = Math.random() * window.innerHeight * 0.6;
 
-      for (let i = 0; i < particlesPerBurst; i++) {
-        const spark = document.createElement("div");
-        spark.className = "firework";
+                    for (let i = 0; i < particlesPerBurst; i++) {
+                        const spark = document.createElement("div");
+                        spark.className = "firework";
 
-        const angle = Math.random() * Math.PI * 2;
-        const distance = Math.random() * 400 + 100;
+                        const angle = Math.random() * Math.PI * 2;
+                        const distance = Math.random() * 400 + 100;
 
-        const x = Math.cos(angle) * distance + "px";
-        const y = Math.sin(angle) * distance + "px";
+                        const x = Math.cos(angle) * distance + "px";
+                        const y = Math.sin(angle) * distance + "px";
 
-        spark.style.setProperty("--x", x);
-        spark.style.setProperty("--y", y);
+                        spark.style.setProperty("--x", x);
+                        spark.style.setProperty("--y", y);
 
-        spark.style.left = centerX + "px";
-        spark.style.top = centerY + "px";
+                        spark.style.left = centerX + "px";
+                        spark.style.top = centerY + "px";
 
-        container.appendChild(spark);
+                        container.appendChild(spark);
 
-        setTimeout(() => spark.remove(), 1800); // correspond à la durée de l'animation
-      }
-    }, burst * 500); // délai entre chaque explosion (0.5s)
-  }
-}
+                        setTimeout(() => spark.remove(), 1800); // correspond à la durée de l'animation
+                    }
+                }, burst * 500); // délai entre chaque explosion (0.5s)
+            }
+        }
 
 
         renderCounter(count);
@@ -645,9 +646,9 @@ function launchFireworks() {
             count += increment;
             renderCounter(count);
             if (count >= 1000000) {
-  counter.classList.add("million");
-    launchFireworks();
-}
+                counter.classList.add("million");
+                launchFireworks();
+            }
         }, 1500);
     </script>
 
