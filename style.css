@@ -596,7 +596,7 @@ header {
 
 }
 
-header2 {
+.header2 {
     /* position: fixed; */
     top: 0;
     left: 0;
@@ -1421,6 +1421,10 @@ p {
 /*-------------------------------------------------------------------------------------------*/
 
 /*LA DOCUMENTATION */
+
+.surlignerTexte{
+    text-decoration: underline;
+}
 
 .pdf-wrapper {
     width: 100%;
