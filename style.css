@@ -606,6 +606,18 @@ header {
     color: white;
 }
 
+.section-hero-telechargement {
+       background-image: url(assets/groupe_perso.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 90vH;
+    color: white;
+    position: relative;
+    z-index: 1;
+    
+}
+
 .section-bg {
     background-image: url(assets/bg-patern.png);
     background-repeat: no-repeat;
