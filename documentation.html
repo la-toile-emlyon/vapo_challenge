@@ -425,7 +425,7 @@
 
 
 
-                        <h2>2</h2>
+                        <h2><div class="compteur" data-max="2" id="compteur1">2 </div></h2>
                         <p>sessions</p>
 
 
@@ -436,7 +436,7 @@
 
                     <div class="W-30 masterCardSpe bgBonus ">
 
-                        <h2>11</h2>
+                        <h2><div class="compteur" data-max="11" id="compteur2">11</div></h2>
                         <p>testeurs</p>
 
 
@@ -444,7 +444,7 @@
 
                     <div class="W-30 masterCardSpe bgBonus  ">
 
-                        <h2>20+</h2>
+                        <h2><div class="compteur" data-max="20" id="compteur3">20+</div></h2>
                         <p>retours</p>
 
 
@@ -963,6 +963,48 @@
             }
         });
     </script>
+<script>
+function lancerCompteur(el) {
+  let compteur = 1;
+  const max = parseInt(el.dataset.max);
+
+  const interval = setInterval(() => {
+    el.textContent = compteur;
+
+    // relance animation pop
+    el.style.animation = "none";
+    el.offsetHeight; // force reflow
+    el.style.animation = "pop 0.15s ease-in-out";
+
+    if (compteur === max) {
+      clearInterval(interval);
+      el.style.color = "#ffffff";
+      el.style.textShadow = "none";
+      el.style.transform = "scale(1.2)";
+    }
+
+    compteur++;
+  }, 80);
+}
+
+// S'assurer que le DOM est chargé
+document.addEventListener("DOMContentLoaded", () => {
+  const section = document.getElementById("test-utilisateur");
+  let launched = false;
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !launched) {
+        launched = true;
+        document.querySelectorAll(".compteur").forEach(lancerCompteur);
+      }
+    });
+  }, { threshold: 0.1 }); // déclenche dès 10% visible
+
+  observer.observe(section);
+});
+</script>
+
 
 </body>
 
