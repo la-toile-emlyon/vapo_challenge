@@ -398,6 +398,7 @@
 
                     <!-- ma deuxième div -->
                     <div class="w-48 cardAvis glass">
+
                         <img src="assets/bandeau.png" class="w-20 transform-section6-1" alt="">
 
                         <div class="flex gap-3">
@@ -516,16 +517,26 @@
                     <p class="w-52  txtWhite pFooter policeEpilogue">Rejoins la communauté Vapo Challenge et libère-toi
                         enfin de la cigarette électronique ! </p>
 
-
-                    <!--  
-                          <div class="counter-box">
-    <div class="number" id="counter">12 458</div>
-    <div class="text">personnes ont déjà rejoint l’appli</div>
-  </div>
-                    <div class="margin-top-10 w-100"><i class="ph-fill ph-instagram-logo txtWhite"></i>
-                        <i class="ph-fill ph-linkedin-logo" txtWhite"></i>
+                    <!-- compteur  de personnes qui ont installés l'appli -->
+                    <div class="counter-wrapper w-73">
+                        <div id="counter" class="counter"></div>
+                        <p>personnes ont déjà rejoint l’application</p>
                     </div>
--->
+                    <div id="fireworks"></div>
+
+                    <div class="margin-top-10 w-100">
+
+                        <a href="">
+                            <i class="ph-fill ph-instagram-logo txtWhite"></i>
+                        </a>
+                        <a href=""></a>
+                        <i class="ph-fill ph-linkedin-logo"></i>
+                        </a>
+
+                    </div>
+
+
+
 
                 </div>
                 <!-- ma deuxième div -->
@@ -548,15 +559,89 @@
         AOS.init();
     </script>
     <script>
-        let counter = 12458;
-        const counterElement = document.getElementById("counter");
+        let count = 999900;
+        const counter = document.getElementById("counter");
+
+        function formatNumber(num) {
+            return num.toString(); // aucun espace, aucun séparateur
+        }
+
+        function renderCounter(num) {
+            counter.innerHTML = "";
+            const formatted = formatNumber(num);
+
+            for (let char of formatted) {
+                if (char === " ") {
+                    const sep = document.createElement("div");
+                    sep.className = "separator";
+                    sep.textContent = " ";
+                    counter.appendChild(sep);
+                } else {
+                    const digit = document.createElement("div");
+                    digit.className = "digit";
+                    digit.textContent = char;
+                    counter.appendChild(digit);
+                }
+            }
+        }
+
+let fireworksLaunched = false;
+
+function launchFireworks() {
+  if (fireworksLaunched) return;
+  fireworksLaunched = true;
+
+  const container = document.getElementById("fireworks");
+  const totalBursts = 8;      // nombre de vagues
+  const particlesPerBurst = 45;
+
+  for (let burst = 0; burst < totalBursts; burst++) {
+    setTimeout(() => {
+      const centerX = Math.random() * window.innerWidth;
+      const centerY = Math.random() * window.innerHeight * 0.6;
+
+      for (let i = 0; i < particlesPerBurst; i++) {
+        const spark = document.createElement("div");
+        spark.className = "firework";
+
+        const angle = Math.random() * Math.PI * 2;
+        const distance = Math.random() * 400 + 100;
+
+        const x = Math.cos(angle) * distance + "px";
+        const y = Math.sin(angle) * distance + "px";
+
+        spark.style.setProperty("--x", x);
+        spark.style.setProperty("--y", y);
+
+        spark.style.left = centerX + "px";
+        spark.style.top = centerY + "px";
+
+        container.appendChild(spark);
+
+        setTimeout(() => spark.remove(), 1800); // correspond à la durée de l'animation
+      }
+    }, burst * 500); // délai entre chaque explosion (0.5s)
+  }
+}
+
+
+        renderCounter(count);
 
         setInterval(() => {
-            const increment = Math.floor(Math.random() * 3) + 1; // +1 à +3
-            counter += increment;
-            counterElement.textContent = counter.toLocaleString("fr-FR");
-        }, 2000); // toutes les 2 secondes
+            let increment = count < 1000000
+                ? Math.floor(Math.random() * 20) + 10
+                : Math.floor(Math.random() * 3) + 1;
+
+            count += increment;
+            renderCounter(count);
+            if (count >= 1000000) {
+  counter.classList.add("million");
+    launchFireworks();
+}
+        }, 1500);
     </script>
+
+
 
 </body>
 
