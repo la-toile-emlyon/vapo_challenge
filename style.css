@@ -602,7 +602,7 @@ deux dimensions diponibles 1000 et 800 */
 /* header*/
 
 header {
-     position: fixed; 
+ /* position: fixed; */ 
     top: 0;
     left: 0;
     width: 100%;
