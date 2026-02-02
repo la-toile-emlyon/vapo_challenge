@@ -448,6 +448,14 @@ deux dimensions diponibles 1000 et 800 */
     margin-top: -250px;
 }
 
+.margin-top-minus-450 {
+    margin-top: -400px;
+}
+
+.margin-top-minus-10 {
+    margin-top: -10px;
+}
+
 .margin-bottom-minus-100 {
     margin-bottom: -100px;
 }
@@ -479,6 +487,10 @@ deux dimensions diponibles 1000 et 800 */
 
 .margin-bottom-10 {
     margin-bottom: 10px;
+}
+
+.margin-bottom-40 {
+    margin-bottom: 40px;
 }
 
 .margin-bottom-100 {
@@ -584,22 +596,23 @@ deux dimensions diponibles 1000 et 800 */
 
 
 /*LA LANDING PAGE*/
-/*-------------------------------------------------------------------------------------------*/
+/*--------------------------------------------------------bhvil-----------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 /* page index*/
 /* header*/
 
 header {
-    /* position: fixed; */
+     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     background-color: #260356;
+    z-index: 7;
 
 }
 
 .header2 {
-    /* position: fixed; */
+     position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
@@ -755,6 +768,7 @@ h3 {
 /* background de ma section présentation*/
 .bgViolet {
     background-color: #260356;
+    
 }
 
 .section-bg-theme {
@@ -864,7 +878,7 @@ p {
 }
 
 .transform12bisDoc {
-    transform: translate(90px, -290px);
+    transform: translate(60px, -330px);
 }
 
 .transform1bis {
@@ -880,7 +894,7 @@ p {
 }
 
 .transform23bisDoc {
-    transform: translate(0px, 100px);
+    transform: translate(0px, 80px);
 }
 
 
@@ -908,8 +922,8 @@ p {
     transform: translate(-5px, -150px);
     position: relative;
     z-index: 2;
-    left: 20px;
-    top: -190px;
+    left: 30px;
+    top: -230px;
 }
 
 .transformSpe {
@@ -1417,10 +1431,6 @@ p {
     font-size: 25px;
     color: white;
 }
-
-
-
-
 
 
 
