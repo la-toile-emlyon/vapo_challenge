@@ -34,6 +34,12 @@ a {
 }
 
 
+.speVINCENT {
+    font-family: "Knewave", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
 p {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -449,7 +455,7 @@ deux dimensions diponibles 1000 et 800 */
 }
 
 .margin-top-minus-450 {
-    margin-top: -400px;
+    margin-top: -450px;
 }
 
 .margin-top-minus-10 {
@@ -696,7 +702,12 @@ h4 {
     font-weight: 300;
     color: #FFFF;
 
+}
+.h4bis{
 
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFFF;
 
 }
 
@@ -927,7 +938,11 @@ p {
 }
 
 .transformSpe {
-    transform: translate(20px, 100px);
+    transform: translate(20px, 90px);
+}
+
+.transformSpe1 {
+    transform: translate(20px, 90px);
 }
 
 .backspecial3 {
@@ -950,12 +965,23 @@ p {
 
 }
 
-.backspecial31 {
+.backspecial33 {
 
     background-color: #9d30f02a;
     border: solid, #9C30F0;
     border-radius: 20px;
     height: 500px;
+   
+
+
+}
+
+.backspecial31 {
+
+    background-color: #9d30f02a;
+    border: solid, #9C30F0;
+    border-radius: 20px;
+    height: 550px;
 
 
 
@@ -966,6 +992,7 @@ p {
     background-color: #9d30f02a;
     border: solid, #9C30F0;
     border-radius: 20px;
+    height: 230px;
 
 
 }
@@ -1059,6 +1086,10 @@ p {
 
 
 
+}
+
+.colorJaune {
+    color: #FFE665;
 }
 
 
@@ -1518,17 +1549,17 @@ p {
 .menu-fixe a {
     display: block;
     margin-bottom: 8px;
-    color: white;
+    color: rgb(188, 178, 178);
     text-decoration: none;
     font-size: 14px;
 }
 
 .menu-fixe a:hover {
-    color: #007BFF;
+    color: #FFE665;
 }
 
 .menu-fixe a.active {
-    color: #007BFF;
+    color: #FFE665;
     font-weight: 600;
 }
 
