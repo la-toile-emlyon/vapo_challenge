@@ -970,11 +970,11 @@ p {
 }
 
 .transformSpeTele {
-    transform: translate(480px, -100px);
+    transform: translate(150px, -300px);
 }
 
 .transformSpeTele2 {
-    transform: translate(300px, -130px);
+    transform: translate(-250px, -100px);
 }
 
 
