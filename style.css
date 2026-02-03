@@ -626,20 +626,29 @@ deux dimensions diponibles 1000 et 800 */
 
 
 /*LA LANDING PAGE*/
-/*--------------------------------------------------------bhvil-----------------------------------*/
+/*-------------------------------------------------------- -----------------------------------*/
 /*-------------------------------------------------------------------------------------------*/
 /* page index*/
 /* header*/
 
 header {
- /* position: fixed; */ 
+   position: fixed; 
     top: 0;
     left: 0;
     width: 100%;
     background-color: #260356;
+    
     z-index: 7;
 
 }
+
+
+    
+    
+    
+   
+   
+
 
 .header2 {
      position: fixed; 
@@ -970,11 +979,15 @@ p {
 }
 
 .transformSpeTele {
-    transform: translate(150px, -300px);
+    transform: translate(500px, -510px);
 }
 
 .transformSpeTele2 {
     transform: translate(-300px, -120px);
+}
+
+.transformSpeTele3 {
+    transform: translate(700px, -450px);
 }
 
 
@@ -1661,6 +1674,10 @@ p {
 
 .margin-b {
     margin-bottom: 20px;
+}
+
+.margin-top-100px {
+margin-top: 100px;
 }
 
 /*-------------------------------------------------------------------------------------------*/
