@@ -46,6 +46,7 @@ p {
     font-style: normal;
 }
 
+
 body {
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -509,10 +510,20 @@ deux dimensions diponibles 1000 et 800 */
 
 .margin-bottom-50 {
     margin-bottom: 50px;
+
+    
+}
+
+.margin-bottom-120 {
+    margin-bottom: 120px;
 }
 
 .margin-bottom-150 {
     margin-bottom: 150px;
+}
+
+.margin-bottom-170 {
+    margin-bottom: 170px;
 }
 
 .margin-bottom-200 {
@@ -525,6 +536,19 @@ deux dimensions diponibles 1000 et 800 */
 
 .margin-bottom-300 {
     margin-bottom: 300px;
+}
+
+
+.margin-bottom-350 {
+    margin-bottom: 350px;
+}
+
+.margin-bottom-400 {
+    margin-bottom: 400px;
+}
+
+.margin-bottom-420 {
+    margin-bottom: 420px;
 }
 
 /*honte sur moi désolé pour ces 2 margins*/
@@ -641,7 +665,7 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 110vH;
+    height: 85vH;
     color: white;
     position: relative;
     z-index: 1;
@@ -944,6 +968,15 @@ p {
 .transformSpe1 {
     transform: translate(20px, 90px);
 }
+
+.transformSpeTele {
+    transform: translate(480px, -100px);
+}
+
+.transformSpeTele2 {
+    transform: translate(300px, -130px);
+}
+
 
 .backspecial3 {
 
@@ -1434,6 +1467,10 @@ p {
     font-family: "Epilogue", sans-serif;
 }
 
+.policeInter{
+      font-family: "Inter", sans-serif;
+}
+
 /* padding pour aérer mes input dans mon formulaire de contact */
 .paddingFormulaire {
     padding: 10px 150px 10px 10px;
@@ -1471,6 +1508,10 @@ p {
 /*-------------------------------------------------------------------------------------------*/
 
 /*LA DOCUMENTATION */
+
+.pConcept{
+    font-weight: 300;
+}
 
 #compteur { 
   font-weight: 800;
